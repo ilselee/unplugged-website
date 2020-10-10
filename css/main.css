@@ -91,6 +91,7 @@ textarea {
 
 html {
   font-size: 16px;
+  background-color: #202322;
 }
 
 body {
@@ -109,10 +110,12 @@ a {
   text-decoration: none;
 }
 
+h1,
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
   color: #e2e3ed;
+  font-weight: lighter;
 }
 
 h3,
@@ -120,13 +123,14 @@ h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.125em;
   line-height: 30px;
+  font-weight: lighter;
   color: #e2e3ed;
 }
 
 p {
   font-size: 0.875em;
   line-height: 18px;
-
+  font-weight: lighter;
 }
 
 img {
@@ -167,6 +171,10 @@ header {
   padding: 15px 0;
 }
 
+#logo {
+  width: 220px;
+}
+
 header .content-wrapper {
   display: flex;
   justify-content: center;
@@ -179,6 +187,7 @@ header .content-wrapper {
     width: 100%;
     height: 1px;
     margin: 10px 0 20px 0;
+    background-color: #3a3a3a;
 }
 
 header nav {
@@ -187,16 +196,18 @@ header nav {
   align-items: center;
   flex-flow: row wrap;
   width: 60%;
+  font-weight: bold;
 }
 
 header nav ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
 }
 
 footer {
   flex-direction: column;
+  text-align: center;
 }
 
 footer p {
@@ -238,7 +249,12 @@ footer .copyright {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+    background-image: url('../img/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
   }
+
 
 /* Aside */
 
@@ -247,6 +263,7 @@ footer .copyright {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background-color: #527158;
   }
 
 
@@ -256,6 +273,9 @@ footer .copyright {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+    background-image: url('../img/camp-photo.jpg');
+    background-size: cover;
+    background-position: center;
   }
 
   .features h2 {
@@ -284,6 +304,7 @@ footer .copyright {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+    background-color: #2a423a;
 }
 
   .reviews h2 {
@@ -301,6 +322,7 @@ footer .copyright {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 
 .contact-section {
@@ -308,6 +330,7 @@ footer .copyright {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
 }
 
 .contact-content p {
@@ -322,9 +345,11 @@ footer .copyright {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
+
 }
 
-.faqs .content-wrapper {
+.faq .content-wrapper {
   margin: 50px 0 0 0;
   display: flex;
   justify-content: center;
@@ -340,7 +365,33 @@ footer .copyright {
   margin-bottom: 50px;
 }
 
+/* Button things */
 
+aside .form {
+  margin-top: 30px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
 
 /* ==========================================================================
    Helper classes
