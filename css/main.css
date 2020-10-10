@@ -300,6 +300,13 @@ footer .copyright {
   flex-flow: row wrap;
   }
 
+  .features i {
+    display: flex;
+    font-size: 3.75em;
+    margin-bottom: 40px;
+    justify-content: center;
+  }
+
   .features p {
     margin: 0;
   }
