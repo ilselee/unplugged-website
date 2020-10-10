@@ -134,11 +134,11 @@ p {
 }
 
 img {
-
+  width: 100%;
 }
 
 figure {
-
+  margin: 0;
 }
 
 address {
@@ -171,8 +171,12 @@ header {
   padding: 15px 0;
 }
 
-#logo {
-  width: 220px;
+.logo {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 header .content-wrapper {
@@ -251,6 +255,7 @@ footer .copyright {
     flex-flow: row wrap;
     background-image: url('../img/hero.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
     height: 500px;
   }
@@ -275,6 +280,7 @@ footer .copyright {
     flex-flow: row wrap;
     background-image: url('../img/camp-photo.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
   }
 
@@ -313,6 +319,14 @@ footer .copyright {
   .reviews h3 {
     width: 55%;
     margin: 20px 0;
+  }
+
+.group-photo {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
   }
 
 /*-------------- About Page --------------*/
@@ -491,6 +505,14 @@ input[type=button] {
      margin: 100px 0;
    }
 
+   .logo {
+     width: 30%;
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     flex-flow: row wrap;
+   }
+
    /* Header */
 
    header {
@@ -546,13 +568,24 @@ input[type=button] {
    }
 
    /* Reviews */
+
+/* HOEKOM WIL DIT NIE LANGS MEKAAR SIT NIE */
+
+    .group-photo {
+       width: 40%;
+       display: flex;
+       justify-content: flex-start;
+       align-items: center;
+       flex-flow: row wrap;
+     }
+
    .reviews article {
      display: flex;
      justify-content: space-between;
    }
 
    .reviews article div {
-  width: 49%;
+     width: 49%;
    }
 
    /* Footer */
@@ -621,6 +654,14 @@ input[type=button] {
      max-width: 960px;
    }
 
+   .logo {
+     width: 25%;
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     flex-flow: row wrap;
+   }
+
    /* Hero */
    .hero-area h1 {
      width: 60%;
@@ -651,6 +692,14 @@ input[type=button] {
    .reviews article div {
      width: 42%;
    }
+
+   .group-photo {
+      width: 40%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-flow: row wrap;
+    }
 
 
    /*-------------- About Page -------------*/
